@@ -1,0 +1,42 @@
+.rough-textbox {
+    position: relative;
+    background: none;
+    border: none;
+    user-select: none;
+    font-family: "Virgil";
+    transition: transform 0.06s;
+    height: 1.5em;
+}
+
+.rough-textbox:focus-visible {
+    outline: 2px dotted black;
+}
+
+.rough-textbox:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.rough-textbox > svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    color: inherit;
+}
+
+.rough-textbox > input {
+    position: absolute;
+    inset: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 0.65em;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.rough-textbox:focus-within > svg {
+    color: gray;
+}

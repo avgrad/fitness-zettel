@@ -1,0 +1,46 @@
+.rough-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Virgil";
+    transition: transform 0.06s;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.rough-button:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.rough-button:active {
+    transform: scale(0.98) rotate(1deg);
+}
+
+.rough-button:focus-visible {
+    outline-offset: 0.15em;
+    outline: 2px dotted black;
+}
+
+.rough-button:disabled {
+    transform: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.rough-button > svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    color: #bbb;
+}
+
+.rough-button > .roughbox-content {
+    line-height: 2em;
+    vertical-align: middle;
+    margin: 0 0.7em;
+}

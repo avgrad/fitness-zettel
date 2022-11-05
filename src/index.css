@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    /* https://virgil.excalidraw.com/ */
+    font-family: "Virgil";
+    src: url("./font/Virgil.woff2") format("woff2");
+}
+
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 1rem;
+    margin: 0;
+    font-family: "Virgil", sans-serif; /* TODO alternative fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+    overflow: visible;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+button,
+input,
+a[href] {
+    touch-action: manipulation;
+}
+

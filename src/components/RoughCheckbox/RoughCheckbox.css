@@ -1,0 +1,33 @@
+.rough-checkbox {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.rough-checkbox svg {
+    transition: transform 0.06s;
+    cursor: pointer;
+}
+
+.rough-checkbox svg:hover {
+    transform: scale(1.05);
+}
+
+.rough-checkbox svg:active {
+    transform: scale(0.95);
+}
+
+.rough-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.rough-checkbox input[type="checkbox"]:focus-visible ~ svg {
+    outline: 2px dotted black;
+}
+
+.rough-checkbox input[type="checkbox"] ~ svg .rough-checkbox-checkmark {
+    display: none;
+}
+
+.rough-checkbox input[type="checkbox"]:checked ~ svg .rough-checkbox-checkmark {
+    display: initial;
+}
