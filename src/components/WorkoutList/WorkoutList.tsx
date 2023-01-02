@@ -19,6 +19,13 @@ export function WorkoutList() {
     );
 }
 
+const dateFormat = Intl.DateTimeFormat(undefined, {
+    weekday: "short",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+});
+
 function WorkoutEntry({ workout }: { workout: Workout }) {
     const workoutCompleted = workout.excercises.every(
         (ex) => ex.setsDone === ex.sets
@@ -26,7 +33,7 @@ function WorkoutEntry({ workout }: { workout: Workout }) {
     return (
         <li>
             <Link href={"/workout/" + workout.id}>
-                {workout.date.toLocaleDateString()}
+                {dateFormat.format(workout.date)}
             </Link>
             {workoutCompleted && <span className="workout-completed">✔</span>}
         </li>

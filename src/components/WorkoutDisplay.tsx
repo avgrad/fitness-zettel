@@ -7,6 +7,13 @@ import { db } from "../data/db";
 import { useSetSetsDone, useWorkout } from "../data/hooks";
 import { range } from "../data/utils";
 
+const dateFormat = Intl.DateTimeFormat(undefined, {
+    weekday: "long",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+});
+
 interface IProps {
     id: string;
 }
@@ -27,9 +34,7 @@ export function WorkoutDisplay({ id }: IProps) {
                 style={{
                     display: "flex",
                 }}>
-                <h2 style={{ flex: "1" }}>
-                    {workout.date.toLocaleDateString()}
-                </h2>
+                <h2 style={{ flex: "1" }}>{dateFormat.format(workout.date)}</h2>
                 <RoughButton
                     style={{ alignSelf: "center" }}
                     onClick={() => setDisplayEditButtons((s) => !s)}>
