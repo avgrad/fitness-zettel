@@ -1,5 +1,5 @@
 .rough-checkbox {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--button-bg-gray);
 }
 
 .rough-checkbox svg {

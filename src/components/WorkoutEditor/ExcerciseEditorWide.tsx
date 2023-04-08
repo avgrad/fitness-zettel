@@ -49,7 +49,9 @@ export function ExcerciseEditor({
                         }}>
                         <RoughHr />
                     </div>
-                    <RoughButton onClick={onDelete} bgColor="#d99">
+                    <RoughButton
+                        onClick={onDelete}
+                        bgColor="var(--button-bg-red)">
                         X
                     </RoughButton>
                 </>

@@ -36,10 +36,11 @@
     left: 0;
     top: 0;
     z-index: -10;
-    color: #bbb;
+    color: var(--button-bg-gray);
 }
 
 .rough-button > .roughbox-content {
+    color: var(--text);
     line-height: 2em;
     vertical-align: middle;
     margin: 0 0.7em;

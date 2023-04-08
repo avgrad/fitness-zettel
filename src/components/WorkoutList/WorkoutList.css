@@ -9,6 +9,6 @@
 }
 
 .workout-list .workout-completed {
-    color: #6c6;
+    color: var(--text-green);
     margin-left: 0.5rem;
 }

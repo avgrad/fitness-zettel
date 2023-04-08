@@ -22,7 +22,7 @@ export function SetCountEditor({
                 onClick={() =>
                     current > 1 ? onChange(current - 1) : onDelete()
                 }
-                bgColor={current > 1 ? undefined : "#d99"}>
+                bgColor={current > 1 ? undefined : "var(--button-bg-red)"}>
                 {current > 1 ? "-" : "X"}
             </RoughButton>
             <div>{current}</div>

@@ -14,6 +14,7 @@ export function RoughHr() {
             const roughSvg = rough.svg(svgRef.current);
             const line = roughSvg.line(0, 5, width, 5, {
                 roughness: 1.8,
+                stroke: "var(--button-border)",
                 strokeWidth: 2,
                 seed,
             });

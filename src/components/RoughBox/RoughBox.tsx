@@ -31,6 +31,7 @@ export function RoughBox({
             const roughSvg = rough.svg(svg);
             const rect = roughSvg.rectangle(0, 0, width, height, {
                 roughness: 1.8,
+                stroke: "var(--button-border)",
                 strokeWidth: 2,
                 fillStyle: fillStyle,
                 fill: bgColor,

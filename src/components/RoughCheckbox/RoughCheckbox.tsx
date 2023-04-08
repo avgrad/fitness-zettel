@@ -29,6 +29,7 @@ export function RoughCheckbox({
             const roughSvg = rough.svg(svg);
             const circle = roughSvg.circle(size / 2, size / 2, size * 0.8, {
                 roughness: 1.7,
+                stroke: "var(--button-border)",
                 strokeWidth: 2,
                 fillStyle: "cross-hatch",
                 fill: "currentColor",
@@ -48,6 +49,7 @@ export function RoughCheckbox({
                 ],
                 {
                     roughness: 1.8,
+                    stroke: "var(--button-border)",
                     strokeWidth: 6,
                     disableMultiStroke: true,
                     disableMultiStrokeFill: false,

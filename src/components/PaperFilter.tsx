@@ -35,7 +35,7 @@ export function PaperFilter({
 
                     <feDiffuseLighting
                         in="noise"
-                        lightingColor="white"
+                        lightingColor="var(--background)"
                         result="paperTexture"
                         surfaceScale={lightSurfaceScale}>
                         <feDistantLight

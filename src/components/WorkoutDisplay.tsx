@@ -56,7 +56,7 @@ export function WorkoutDisplay({ id }: IProps) {
                             history.back();
                         }
                     }}
-                    bgColor="#d99">
+                    bgColor="var(--button-bg-red)">
                     🚮 Delete Workout
                 </RoughButton>
                 <RoughButton
@@ -100,8 +100,8 @@ export function WorkoutDisplay({ id }: IProps) {
                                         style={{
                                             color:
                                                 ex.sets === ex.setsDone
-                                                    ? "#8c8"
-                                                    : "#bbb",
+                                                    ? "var(--button-bg-green)"
+                                                    : "var(--button-bg-gray)",
                                         }}
                                         key={ex.id + i}
                                         checked={i < ex.setsDone}

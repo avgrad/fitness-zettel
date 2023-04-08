@@ -3,6 +3,30 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+:root {
+    --background: #fff;
+    --text: #000;
+    --text-green: #6c6;
+    --button-bg-green: #8c8;
+    --button-bg-red: #d99;
+    --button-bg-gray: #bbb;
+    --button-bg-warn: #fc1; /* update prompt bg */
+    --button-border: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #222;
+        --text: #ccc;
+        --text-green: #6c6;
+        --button-bg-green: #236d23;
+        --button-bg-red: #733;
+        --button-bg-gray: #444;
+        --button-bg-warn: #483f03; /* update prompt bg */
+        --button-border: #ccc;
+    }
+}
+
 @font-face {
     /* https://virgil.excalidraw.com/ */
     font-family: "Virgil";
@@ -16,6 +40,7 @@ html {
 }
 
 body {
+    color: var(--text);
     min-height: 100vh;
     padding: 1rem;
     margin: 0;
@@ -29,11 +54,11 @@ svg {
 }
 
 a {
-    color: black;
+    color: var(--text);
 }
 
 a:visited {
-    color: black;
+    color: var(--text);
 }
 
 button,

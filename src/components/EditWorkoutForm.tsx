@@ -52,7 +52,7 @@ export function EditWorkoutForm({ id, cloneWorkout }: IProps) {
                     clear();
                     saveWorkout();
                 }}
-                bgColor="#8c8">
+                bgColor="var(--button-bg-green)">
                 Save Workout
             </RoughButton>
         </div>

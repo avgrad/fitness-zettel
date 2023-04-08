@@ -27,7 +27,7 @@ export function AddWorkoutForm() {
                 updateNotes={workoutActions.updateNotes}
                 excerciseActions={excerciseActions}
             />
-            <RoughButton onClick={saveWorkout} bgColor="#8c8">
+            <RoughButton onClick={saveWorkout} bgColor="var(--button-bg-green)">
                 Save Workout
             </RoughButton>
         </div>

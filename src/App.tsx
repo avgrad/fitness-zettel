@@ -58,7 +58,7 @@ function UpdatePrompt() {
     if (appNeedRefresh)
         return (
             <section className="update-prompt">
-                <RoughBox fillStyle="zigzag" bgColor="#fc1">
+                <RoughBox fillStyle="zigzag" bgColor="var(--button-bg-warn)">
                     <h3 style={{ margin: 0 }}>NEW VERSION AVAILABLE!</h3>
                     <p>
                         There is an update to the app available! Please reload
@@ -66,7 +66,7 @@ function UpdatePrompt() {
                     </p>
                     <p style={{ textAlign: "right", marginBottom: 0 }}>
                         <RoughButton
-                            bgColor="#6d6"
+                            bgColor="var(--button-bg-green)"
                             onClick={() => updateServiceWorker(true)}>
                             👉🏼 Update now!
                         </RoughButton>

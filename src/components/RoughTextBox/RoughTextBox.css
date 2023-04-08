@@ -28,6 +28,7 @@
 .rough-textbox > input {
     position: absolute;
     inset: 0;
+    color: var(--text);
     font-family: inherit;
     font-size: inherit;
     padding: 0 0.65em;
