@@ -27,11 +27,20 @@ const dateFormat = Intl.DateTimeFormat(undefined, {
 });
 
 function WorkoutEntry({ workout }: { workout: Workout }) {
+    const isToday =
+        workout.date.toISOString().substring(0, 10) ===
+        new Date().toISOString().substring(0, 10);
     const workoutCompleted = workout.excercises.every(
         (ex) => ex.setsDone === ex.sets
     );
+
     return (
         <li>
+            {isToday && (
+                <span role="img" aria-label="today">
+                    📅{" "}
+                </span>
+            )}
             <Link href={"/workout/" + workout.id}>
                 {dateFormat.format(workout.date)}
             </Link>
