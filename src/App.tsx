@@ -12,6 +12,7 @@ import { CloneWorkoutPage } from "./pages/CloneWorkoutPage";
 import { FallbackPage } from "./pages/FallbackPage";
 import { RoughBox } from "./components/RoughBox";
 import { RoughButton } from "./components/RoughButton";
+import { SettingsPage } from "./pages/SettingsPage";
 
 const icons = ["🏆", "💪🏼", "📝", "🏋🏼‍♀️", "🏋🏼‍♂️", "🏅"];
 const todaysIcon = icons[Math.floor(Math.random() * icons.length)];
@@ -40,6 +41,7 @@ export default function App() {
                         component={CloneWorkoutPage}
                     />
                     <Route path="/workout/:id" component={ShowWorkoutPage} />
+                    <Route path="/settings" component={SettingsPage} />
                     <Route component={FallbackPage} />
                 </Switch>
             </main>

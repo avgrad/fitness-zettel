@@ -68,3 +68,10 @@ a[href] {
     touch-action: manipulation;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
