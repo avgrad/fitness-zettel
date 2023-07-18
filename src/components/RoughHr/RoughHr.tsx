@@ -3,7 +3,7 @@ import rough from "roughjs";
 import useMeasure from "react-use-measure";
 import { useSeed } from "../useSeed";
 
-export function RoughHr() {
+export function RoughHr({ style }: { style?: React.CSSProperties }) {
     const [containerRef, { width, height }] = useMeasure();
 
     const svgRef = useRef<SVGSVGElement>(null);
@@ -29,6 +29,7 @@ export function RoughHr() {
                 position: "relative",
                 height: "10px",
                 margin: "0.3em 0",
+                ...(style ?? {}),
             }}>
             <svg
                 viewBox={"0 0 " + width + " " + height}
